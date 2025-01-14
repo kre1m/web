@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css\style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <link rel="shortcut icon" href="images\Murom_COA_(Vladimir_Governorate)_(1781).png" type="image/x-icon">
+    <title>Муром</title>
+</head>
+<body>
+    <header class="header">
+        <div data-aos="zoom-in">
+        <h1>Муром</h1>
+        <h2 id="welcomeMessage" style="text-align: center; color: white; padding: 5px;"></h2>
+        </div>
+    </header>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const userName = localStorage.getItem('userName');
+            if (userName) {
+                const welcomeMessage = document.getElementById('welcomeMessage');
+                welcomeMessage.textContent = `Добро пожаловать, ${userName}!`;
+                localStorage.removeItem('userName');
+            } 
+        });
+    </script>
+
+    <div class="conteiner" style="text-align: center;">
+        <nav class="navbar">
+            <div data-aos="fade-down">
+            <button class="nav-button main-button"><a href="index.html" style="color: #fff; text-decoration: none;">Главная</a></button>
+            <button class="nav-button dark-button"><a href="registration.html" style="color: #fff; text-decoration: none;">Профиль</a></button>
+            
+            <button class="nav-button dark-button" id="contactBtn">Контакты</button>
+            <button class="nav-button dark-button"><a href="история.html" style="color: #fff; text-decoration: none;">История</a></button>
+            <button class="nav-button dark-button"><a href="достопримечательности.html" style="color: #fff; text-decoration: none;">Достопримечательности</a></button>
+            <button class="nav-button dark-button"><a href="Муромский калач.html" style="color: #fff; text-decoration: none;">Муромский калач</a></button>
+            </div>
+        </nav>
+    </div>
+
+    <div class="my-modal" id="contactModal">
+        <div class="my-modal-content">
+            <span class="my-modal-close" id="closeBtn">&times;</span>
+            <h2>Контакты</h2>
+            <p>Номер телефона: +79506112578</p>
+            <p><a href="https://t.me/kre1MEOW" target="_blank" style="color: black;">Telegram</a></p>
+            <p><a href="https://vk.com/kre1m" target="_blank" style="color: black;">Вконтакте</a></p>
+            <p>Почта: kre1m@mail.ru</p>
+        </div>
+    </div>
+
+    <article>
+        <script src="js/script.js"></script>
+    </article>
+
+    <div class="conteiner">
+        <div data-aos="fade-up">
+            <h1 style="text-align: center;">Город Муром</h1>
+            <img src="images\images (3).jpg" width="500" height="250" class="leftimg">
+            <p style="font-size: 18px;">Муром, расположенный на левобережье Оки, относится к числу самых древних городов страны, который по праву называют ровесником тысячелетней российской государственности. В течение веков он оставался стратегически важным форпостом на восточных границах Руси, служил сценой для кровопролитных междоусобных военных сражений, жестоких разорительных набегов. Муром пережил страшные пожары, нашествия татар, Смуту, при этом каждый раз он восставал из руин и пепла.</p>
+            <h2 style="text-align: center;">Основные моменты</h2>
+            <p style="font-size: 18px;">Сегодня этот небольшой город во Владимирской области насчитывает чуть более 110 тысяч жителей. Муром находится на расстоянии 137 км от областного центра Владимира. Он отличается особым очарованием, демонстрирует восхищенному туристу богатство золотых куполов, основательность древних сооружений. «Кто не видел города с Оки – тот не видел красоты русской», – так говорил о Муроме Максим Горький. Это место народных былин и преданий, бесценных памятников архитектуры разных времен. Оказавшись здесь, словно попадаешь в настоящую сказку, сюжет которой переносит нас на много веков назад, во времена Древнерусского государства. Город считается родиной знаменитого былинного богатыря Ильи Муромца, защитника родной земли, личность которого с давних времен стала его визитной карточкой. С Муромом тесно связаны судьбы двадцати православных святых, которые отличились милосердием, благочестием, стойкостью духа, поэтому это особенное место для истинно верующих людей. Неудивительно, что в намоленные монастыри и церкви стремятся попасть тысячи паломников.</p>
+            <h2 style="text-align: center;">Расположение и климат</h2>
+            <img src="images\TSentralnaya-ploshchad-Muroma.jpg" alt="Murom" width="450" height="300" class="rightimg">
+            <p style="font-size: 18px;">Муром находится на границе Владимирской и Нижегородской областей. Город живописно раскинулся на высоком берегу Оки, протяженность вдоль левого берега составляет около 8 км. Расстояние до Москвы по прямой составляет около 230 км.
+                Географическое расположение делает город важным железнодорожным узлом. Пригородные электрички связывают Муром с Ковровом, Арзамасом. Дорога до Нижнего Новгорода на экспрессе занимает шесть часов.
+                Умеренно-континентальный климат обеспечивает теплое лето и морозную зиму. Весна в Муроме зачастую короткая и облачная, для осени характерны частые проливные дожди. Снег обычно держится с конца ноября по март. Наибольшее количество осадков выпадает летом.</p>
+            
+            <audio controls>
+                <source src="audio/gimn_rossii_hor.mp3" type="audio/mp3">
+            </audio>
+
+            <video width="1204" height="725" controls>
+                <source src="images\Муром.mp4" type="video/mp4">
+            </video> 
+        </div>
+
+        <hr>
+
+        <div class="pagination">
+            <a href="table.html">&laquo;</a>
+            <a href="index.html">1</a>
+            <a href="история.html">2</a>
+            <a href="достопримечательности.html">3</a>
+            <a href="муромский калач.html">4</a>
+            <a href="table.html">5</a>
+            <a href="история.html">&raquo;</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p style="text-align: center;">Аксёнов Никита Юрьевич 24-ИСТ-4-2</p>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+        });
+    </script>
+</body>
+</html>

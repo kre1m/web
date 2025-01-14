@@ -1,0 +1,150 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f4f4f4; 
+    margin: 0px; 
+    background: url(https://i.pinimg.com/originals/9b/9c/1a/9b9c1a69e6bdf3394f7b1a1ae1fb1a80.jpg) center center no-repeat; /* Устанавливает фоновое изображение, центрированное и без повторения */
+    background-size: cover; 
+    
+}
+.scrollToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    display: none;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.header {
+    background-color: #333; 
+    color: #008080; 
+    padding: 5px; 
+    text-align: center; 
+}
+.conteiner {
+    margin: auto; 
+    width: 1204px; 
+}
+.navbar {
+    margin: 20px; 
+}
+.nav-button {
+    width: 16%; 
+    padding: 15px; 
+    font-size: 14px; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    margin-bottom: 5px; 
+}
+.main-button {
+    background-color: #008080;
+    color: white; 
+}
+.dark-button {
+    background-color: #333; 
+    color: white; 
+}
+.dark-button:hover, .main-button:hover {
+    opacity: 0.8;
+}
+.hidden {
+    display: none; 
+}
+.leftimg {
+    float: left; 
+    margin: 7px 7px 7px 0;
+}
+.rightimg {
+    float: right; 
+    margin: 7px 0 7px 7px;
+}
+@font-face {
+    font-family: "Calibri"; 
+    src: local("Calibri"); 
+}
+.footer {
+    position: static; 
+    bottom: 0; 
+    width: 100%; 
+    height: 30px; 
+    margin-top: 15px; 
+    background-color: #008080; 
+    padding: 10px; 
+}
+.my-modal-button {
+    padding: 10px 20px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    background-color: white; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    position: relative; 
+    z-index: 10; 
+}
+.my-modal {
+    display: none; 
+    position: fixed; 
+    z-index: 10; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+.my-modal-content {
+    background-color: white; 
+    margin: 15% auto; 
+    padding: 20px; 
+    border: 1px solid #888; 
+    width: 300px; 
+    text-align: center; 
+    border-radius: 5px; 
+}
+.my-modal-close {
+    color: #aaa; 
+    float: right; 
+    font-size: 28px; 
+    font-weight: bold; 
+    cursor: pointer; 
+}
+.my-modal-close:hover,
+.my-modal-close:focus {
+    color: black; 
+}
+a:hover, a:visited, a:active {
+    color: #FFFFFF; 
+}
+a {
+    color: #fff;
+}
+.pagination {
+    text-align: center;
+}
+.pagination a {
+    float: center; 
+    color: black; 
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.pagination a.active {
+    background-color: #008080; 
+    color: white; 
+}
+.pagination a:hover:not(.active) {
+    background-color: #ddd; /
+}
+table {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #000000;
+    text-align: center;
+    padding: 8px;
+}
