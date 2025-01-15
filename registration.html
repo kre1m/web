@@ -3,24 +3,29 @@
 <head>
     <title>Регистрация</title>
     <link rel="stylesheet" href="css/registration.css">
-    <link rel="shortcut icon" href="\Html_project\images\Murom_COA_(Vladimir_Governorate)_(1781).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.1/aos.js"></script>
+    <link rel="shortcut icon" href="images\Murom_COA_(Vladimir_Governorate)_(1781).png" type="image/x-icon">
 </head>
 <body>
-    <div class="container">
-        <form id="registration" action="" method="">
-            <div class="title">
-                <h2>Регистрация</h2>
-                <h5>Заполните форму для регистрации</h5>
-            </div>
-            <div class="box">
-                <input type="name" id="name" placeholder="Введите ФИО" required>
-                <input type="email" placeholder="Введите почту" required>
-                <input type="password" placeholder="Пароль" required>
-                <input type="password" placeholder="Повторите пароль" required>
-                <button type="submit">Зарегистрироваться</button>
-            </div>
-        </form>
+    <div data-aos="zoom-out">
+        <div class="container">
+            <form id="registration" action="" method="">
+                <div class="title">
+                    <h2>Регистрация</h2>
+                    <h5>Заполните форму для регистрации</h5>
+                </div>
+                <div class="box">
+                    <input type="name" id="name" placeholder="Введите ФИО" required>
+                    <input type="email" placeholder="Введите почту" required>
+                    <input type="password" placeholder="Пароль" required>
+                    <input type="password" placeholder="Повторите пароль" required>
+                    <button type="submit">Зарегистрироваться</button>
+                </div>
+            </form>
+        </div>
     </div>
+
     <script>
         document.getElementById('registration').addEventListener('submit', function(event) {
             event.preventDefault();
@@ -28,6 +33,12 @@
             localStorage.setItem('userName', name);
             alert('Вы зарегистрированы! Нажмите "ОК" для возвращения на главную страницу');
             window.location.href="index.html";
+        });
+    </script>
+
+    <script>
+        AOS.init({
+            duration: 900,
         });
     </script>
 </body>
