@@ -13,10 +13,10 @@
             <form id="registration" action="" method="">
                 <div class="title">
                     <h2>Регистрация</h2>
-                    <h5>Заполните форму для регистрации</h5>
+                    <h5>Заполните поля для регистрации</h5>
                 </div>
                 <div class="box">
-                    <input type="name" id="name" placeholder="Введите ФИО" required>
+                    <input type="name" id="name" placeholder="Введите имя" required>
                     <input type="email" placeholder="Введите почту" required>
                     <input type="password" placeholder="Пароль" required>
                     <input type="password" placeholder="Повторите пароль" required>
@@ -31,7 +31,7 @@
             event.preventDefault();
             const name = document.getElementById('name').value;
             localStorage.setItem('userName', name);
-            alert('Вы зарегистрированы! Нажмите "ОК" для возвращения на главную страницу');
+            alert('Вы зарегистрированы!');
             window.location.href="index.html";
         });
     </script>
